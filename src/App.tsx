@@ -2,6 +2,36 @@ import { useEffect, useState } from "react";
 import LaptopImage from "./assets/final.webp";
 import logo from "./assets/logo-h.png";
 
+function BlurImage({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+}) {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <div
+      className={`relative w-full transition-all duration-700 rounded-lg ${
+        !loaded ? "animate-pulse bg-gray-100" : ""
+      }`}
+    >
+      <img
+        src={src}
+        alt={alt}
+        onLoad={() => setLoaded(true)}
+        className={` h-auto  transition-opacity duration-700 ${
+          loaded ? "opacity-100" : "opacity-0"
+        } ${className}`}
+        loading="eager"
+      />
+    </div>
+  );
+}
+
 export default function ComingSoon() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -50,23 +80,15 @@ export default function ComingSoon() {
           </span>
         ))}
       </div>
-      {/* <br />
-      <div className="absolute w-full sm:top-[40%] -z-10 animate-marquee whitespace-nowrap text-[6vw] font-semibold  text-gray-400  opacity-10 mt-2">
-        {Array.from({ length: 10 }).map((_, i) => (
-          <span key={i} className="mx-2 text-primary">
-            SOON <span className="text-text">COMING</span>
-          </span>
-        ))}
-      </div> */}
 
       {/* Logo */}
       <div className="mb-8">
-        <img src={logo} alt="H platform logo" className="w-40" />
+        <BlurImage src={logo} alt="H-platform preview" className="w-40" />
       </div>
 
       {/* Laptop image */}
       <div className="max-w-md w-full px-4">
-        <img
+        <BlurImage
           src={LaptopImage}
           alt="H-platform preview"
           className="w-full h-auto rounded-lg"
