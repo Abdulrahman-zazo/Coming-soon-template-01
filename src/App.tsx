@@ -16,8 +16,8 @@ function BlurImage({
   return (
     <div
       className={`relative w-full transition-all duration-700 rounded-lg ${
-        !loaded ? "animate-pulse bg-gray-100" : ""
-      }`}
+        !loaded ? "animate-pulse bg-purple-50" : ""
+      } ${className}`}
     >
       <img
         src={src}
@@ -82,8 +82,12 @@ export default function ComingSoon() {
       </div>
 
       {/* Logo */}
-      <div className="mb-8">
-        <BlurImage src={logo} alt="H-platform preview" className="w-40" />
+      <div className="mb-8 max-w-md px-4">
+        <BlurImage
+          src={logo}
+          alt="H-platform preview"
+          className="w-40 h-auto"
+        />
       </div>
 
       {/* Laptop image */}
