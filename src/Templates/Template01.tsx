@@ -18,7 +18,7 @@ function BlurImage({
   return (
     <div
       className={`relative w-full transition-all duration-700 rounded-lg ${
-        !loaded ? "animate-pulse bg-purple-50" : ""
+        !loaded ? "animate-pulse  w-400 h-500 bg-purple-50" : ""
       } ${className}`}
     >
       <img
@@ -26,7 +26,7 @@ function BlurImage({
         alt={alt}
         onLoad={() => setLoaded(true)}
         className={` h-auto  transition-opacity duration-700 ${
-          loaded ? "opacity-100" : "opacity-0"
+          loaded ? "opacity-100" : "opacity-0 w-400 "
         } ${className}`}
         loading="eager"
       />
@@ -44,7 +44,7 @@ export default function ComingSoon() {
 
   useEffect(() => {
     const countdown = () => {
-      const targetDate = new Date("2025-06-07T00:00:00Z").getTime();
+      const targetDate = new Date("2025-06-30T00:00:00Z").getTime();
       const now = new Date().getTime();
       const difference = targetDate - now;
 
