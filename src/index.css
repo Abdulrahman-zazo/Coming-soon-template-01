@@ -20,6 +20,10 @@
 
   /* ... */
 }
+
+.background-red {
+  background: conic-gradient(at bottom right, #b91c1c, #262626, #0a0a0a);
+}
 @layer utilities {
   @keyframes slide-in {
     0% {

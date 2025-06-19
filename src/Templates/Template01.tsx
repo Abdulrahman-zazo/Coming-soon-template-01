@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 const LaptopImage =
-  "https://res.cloudinary.com/dmn6uzy82/image/upload/v1750334925/final_1_v1thl3.webp";
+  "https://res.cloudinary.com/dmn6uzy82/image/upload/v1750340036/Frame_1_3_a4ucw0.avif";
 const logo =
   "https://res.cloudinary.com/dmn6uzy82/image/upload/v1750334993/logo-h_tw2neb.png";
 
@@ -28,7 +28,7 @@ function BlurImage({
         className={` h-auto  transition-opacity duration-700 ${
           loaded ? "opacity-100" : "opacity-0 w-400 "
         } ${className}`}
-        loading="eager"
+        loading="lazy"
       />
     </div>
   );
