@@ -4,9 +4,9 @@ const ImagePhone =
 
 import { motion } from "framer-motion";
 
-const HeroSection = () => {
+const Template03 = () => {
   return (
-    <div className="min-h-screen bg-[#06183E] text-white flex flex-col md:flex-col items-center justify-center p-8 relative overflow-hidden">
+    <div className="min-h-screen text-white flex flex-col md:flex-col items-center justify-center p-8 relative overflow-hidden background-Lime">
       {/* Left Content */}
 
       {/* Right Phone Image */}
@@ -28,7 +28,7 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
         className="max-w-xl space-y-2 text-center md:text-left z-10"
       >
-        <h1 className="text-xl md:text-2xl font-semibold w-full text-center">
+        <h1 className="text-2xl md:text-4xl font-semibold w-full text-center">
           <span className="text-white">We</span> will write success stories with{" "}
           <span className="text-[#A6C81B]">code</span> soon
         </h1>
@@ -62,4 +62,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Template03;

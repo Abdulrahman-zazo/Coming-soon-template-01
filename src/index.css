@@ -20,9 +20,25 @@
 
   /* ... */
 }
-
+body {
+  font-family: "inter", sans-serif;
+}
 .background-red {
   background: conic-gradient(at bottom right, #b91c1c, #262626, #0a0a0a);
+}
+.background-Lime {
+  background: conic-gradient(at top left, #020617, #0f172a, #84cc16);
+}
+.background-blue {
+  background: linear-gradient(
+    to bottom left,
+    rgba(74, 116, 234, 0.2),
+    rgba(204, 214, 240, 0.45),
+    #ffffff
+  );
+}
+.background-black {
+  background: linear-gradient(to left, #000000, #0a0a0a, #000000);
 }
 @layer utilities {
   @keyframes slide-in {

@@ -34,7 +34,7 @@ function BlurImage({
   );
 }
 
-export default function ComingSoon() {
+export default function Template01() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
