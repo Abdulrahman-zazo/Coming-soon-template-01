@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const Home = () => {
   return (
-    <div className="background-black noise-[100, 20, 5];">
+    <div className="background-black ">
       <Header />
       <CardsTemplates />
       <Footer />

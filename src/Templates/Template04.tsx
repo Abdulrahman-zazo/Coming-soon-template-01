@@ -1,6 +1,5 @@
 const ImagePhone =
   "https://res.cloudinary.com/dmn6uzy82/image/upload/v1750430231/Frame_1171275632_2_el9ggw.avif";
-// src/components/HeroSection.jsx
 
 import { motion } from "framer-motion";
 
@@ -73,7 +72,7 @@ const contactMethods = [
 ];
 const Template04 = () => {
   return (
-    <div className="min-h-screen px-16 text-white grid grid-cols-1 sm:grid-cols-2   items-center  sm:px-16 relative overflow-hidden background-blue">
+    <div className="min-h-screen px-12 text-white grid grid-cols-1 sm:grid-cols-2   items-center  sm:px-16 relative overflow-hidden background-blue">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -81,12 +80,12 @@ const Template04 = () => {
         className="max-w-xl space-y-2 text-center col-span-1 md:text-left z-10"
       >
         <main className="py-6 sm:py-14 ">
-          <div className="max-w-screen-xl mx-auto px-4 sm:pl-12 sm:pr-0 text-gray-600 ">
+          <div className="max-w-screen-xl mx-auto  sm:pl-12 sm:pr-0 text-gray-600 ">
             <div className="max-w-xl space-y-3">
-              <p className="text-gray-900 text-3xl font-bold sm:text-5xl">
+              <p className="text-gray-900 text-4xl font-bold sm:text-5xl">
                 We Will Coming <span className="text-[#4A74EA]">Soon!</span>
               </p>
-              <p>
+              <p className="hidden sm:inline">
                 We’re here to help and answer any question you might have, We
                 look forward to hearing from you .
               </p>
@@ -95,7 +94,7 @@ const Template04 = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
-              className="relative mb-4 inline sm:hidden col-span-1  z-10"
+              className="  inline sm:hidden col-span-1  "
             >
               <img
                 src={ImagePhone}
@@ -104,7 +103,7 @@ const Template04 = () => {
               />
             </motion.div>
             <div>
-              <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24">
+              <ul className="mt-12 grid grid-cols-1 sm:grid-cols-2 flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24">
                 {contactMethods.map((item, idx) => (
                   <li key={idx}>
                     <h4 className="text-gray-800 text-lg font-medium">

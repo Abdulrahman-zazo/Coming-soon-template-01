@@ -67,8 +67,6 @@ export default function Template01() {
 
   return (
     <div className="h-screen w-screen -z-30 bg-bg-purple text-center flex flex-col justify-center items-center overflow-hidden relative">
-      {/* Animated background text */}
-
       <div className="absolute w-full sm:top-[30%] -z-10 animate-marquee whitespace-nowrap text-[6vw] font-semibold leading-12 sm:leading-20 2xl:leading-30 text-gray-400  opacity-10">
         {Array.from({ length: 10 }).map((_, i) => (
           <span key={i} className="mx-2 text-primary my-0">
@@ -83,7 +81,6 @@ export default function Template01() {
         ))}
       </div>
 
-      {/* Logo */}
       <div className="mb-8 max-w-md px-4">
         <BlurImage
           src={logo}
@@ -92,7 +89,6 @@ export default function Template01() {
         />
       </div>
 
-      {/* Laptop image */}
       <div className="max-w-md w-full px-4">
         <BlurImage
           src={LaptopImage}
@@ -101,7 +97,6 @@ export default function Template01() {
         />
       </div>
 
-      {/* Countdown */}
       <div className="mt-8 flex justify-center gap-6 text-gray-900 text-lg font-semibold">
         <div className="text-center">
           <div className="text-2xl sm:text-4xl ">{timeLeft.days}</div>
@@ -121,7 +116,6 @@ export default function Template01() {
         </div>
       </div>
 
-      {/* Footer */}
       <footer className="absolute bottom-8 text-xs text-gray-500">
         DESIGNED BY <span className="text-primary">VEGUSCODE</span>, 2025, ALL
         RIGHTS RESERVED

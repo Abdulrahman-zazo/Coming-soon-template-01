@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Logo from "../../public/Group 42.png";
+const Logo =
+  "https://res.cloudinary.com/dmn6uzy82/image/upload/v1750456977/Group_42_pvkdif.png";
+
 import { Link } from "react-router-dom";
 const Header = () => {
   const [state, setState] = useState(false);
 
-  // Replace javascript:void(0) paths with your paths
   const navigation = [
     { id: 1, title: "Template-01", path: "/template01" },
     { id: 2, title: "Template-02", path: "/template02" },
@@ -21,6 +22,7 @@ const Header = () => {
           </Link>
           <div className="md:hidden">
             <button
+              title={state ? "close menu" : "open menu"}
               className="text-neutral-200 hover:text-neutral-500"
               onClick={() => setState(!state)}
             >
@@ -76,12 +78,10 @@ const Header = () => {
             })}
 
             <a
-              className="group inline-block rounded-full bg-white  border-2 border-neutral-500 hover:text-white focus:ring-3 "
+              className="group text-sm py-2 px-6 inline-block rounded-full text-black bg-white  border-2 border-neutral-500 hover:text-white focus:ring-3 "
               href="#"
             >
-              <span className="block text-black rounded-full px-8 py-2  text-sm font-medium group-hover:bg-transparent">
-                Contact
-              </span>
+              Contact
             </a>
           </ul>
         </div>

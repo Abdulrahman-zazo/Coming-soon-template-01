@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import Logo from "../../public/Group 42.png";
+const Logo =
+  "https://res.cloudinary.com/dmn6uzy82/image/upload/v1750456977/Group_42_pvkdif.png";
 
 const Footer = () => {
   const footerNavs = [
@@ -14,8 +15,7 @@ const Footer = () => {
       <div className="max-w-lg sm:mx-auto sm:text-center">
         <img
           src={Logo}
-          width={250}
-          className="h-auto mx-auto my-2"
+          className="w-[150px] sm:w-[250px] h-auto mx-auto my-2"
           alt="logo"
         />
 
@@ -38,7 +38,10 @@ const Footer = () => {
         <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-              <a href="https://www.instagram.com/abdulrahman_zazo/">
+              <a
+                href="https://www.instagram.com/abdulrahman_zazo/"
+                title="Instagram"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -59,7 +62,10 @@ const Footer = () => {
             </li>
 
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-              <a href="https://www.facebook.com/abdulrahman.zazo/ ">
+              <a
+                href="https://www.facebook.com/abdulrahman.zazo/ "
+                title="Facebook"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -78,7 +84,7 @@ const Footer = () => {
             </li>
 
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-              <a href="javascript:void()">
+              <a href="#" title="Linkedin">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -99,7 +105,7 @@ const Footer = () => {
             </li>
 
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-              <a href="mailto:abdulrahmanzazo@outlook.com">
+              <a href="mailto:abdulrahmanzazo@outlook.com" title="Email">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"

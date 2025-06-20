@@ -1,15 +1,10 @@
+import { motion } from "framer-motion";
 const ImagePhone =
   "https://res.cloudinary.com/dmn6uzy82/image/upload/v1750347388/Frame_229_1_iiae4s.png";
-// src/components/HeroSection.jsx
-
-import { motion } from "framer-motion";
 
 const Template03 = () => {
   return (
     <div className="min-h-screen text-white flex flex-col md:flex-col items-center justify-center p-8 relative overflow-hidden background-Lime">
-      {/* Left Content */}
-
-      {/* Right Phone Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8, rotate: 0 }}
         animate={{ opacity: 1, scale: 1, rotate: 20 }}
